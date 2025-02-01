@@ -11,14 +11,15 @@ import { IoMdNotifications } from "react-icons/io";
 const Navbar = () => {
   return (
     <div className="flex justify-between px-14 h-14 items-center bg-[#212121] opacity-95 sticky">
-      <div className="flex gap-8 items-center text-2xl text-white">
+      <div className="flex gap-8 items-center text-2xl">
         <div>
           <GiHamburgerMenu />
         </div>
         <div className="flex gap-2 items-center justify-center">
-          <FaYoutube className="text-3xl text-red-500" />
-          <span className="text-2 xl font-bold">YouTube</span>
-        </div>
+          <FaYoutube className="text-3xl text-red-600" />
+          <span className="text-2 xl">YouTube</span>
+      </div>
+      </div>
         <div className="flex item-center justify-center gap-5">
           <form>
             <div className="flex items-center bg-zinc-900 h-10 px-4 pr-0 rounded-3xl">
@@ -33,15 +34,15 @@ const Navbar = () => {
           <div className=" text- xl p-3 bg-zinc-900 rounded-full ">
             <HiOutlineMicrophone/>
           </div>
-          <div className="flex gap-5 items-center text-xl">
-            <RiVideoAddLine />
-            <div className="relative">
-            <IoMdNotifications />
-            <span className="absolute bottom-2 left-2 " > 9+</span>
-            </div> 
-          </div>
         </div>
-      </div>
+        <div className="flex gap-8 items-center text-xl">
+          <RiVideoAddLine />
+          <div className="relative">
+          <IoMdNotifications />
+          <span className="absolute bottom-2 left-2 text-xs bg-red-600 rounded-full px-1" > 9+</span>
+          </div> 
+          <img src="https://images.unsplash.com/photo-1567591414240-e9c1e59f3e06?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FucGF0aXxlbnwwfHwwfHx8MA%3D%3D" alt= "profile-logo" className="w-9 h-9 rounded-full"></img>
+        </div>
     </div>
   );
 };
