@@ -1,15 +1,17 @@
-import './App.css';
-import Home from './pages/Home';
-import {Routes,BrowserRouter,Route} from 'react-router-dom'
+import React from 'react'
+import Home from './pages/Home'
+import { BrowserRouter, Routes ,Route} from 'react-router-dom'
+import Search from './pages/Search'
+import Watch from './pages/Watch'
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
-       <Routes>
-        <Route path='/' element={<Home/>}/>
-       </Routes>
-    </BrowserRouter> 
-  );
+    <Routes>
+    <Route path='/' element={<Home/>}/>
+    <Route path='/search' element={<Search/>}/>
+    <Route path='/watch/:id' element={<Watch/>}/>
+    </Routes>
+    </BrowserRouter>
+  )
 }
-
-export default App;
